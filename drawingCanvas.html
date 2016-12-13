@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type ='text/javascript'>
+        function init(){
+            var can = document.getElementById("canvas");
+            var ctx = can.getContext("2d");
+            // you can use rgb and aplpha rgb(255,255,0,0.5)
+            ctx.strokeStyle ="#0000000"
+            ctx.fillStyle ="#FF00000"
+            ctx.lineWidth ="20";
+            ctx.fillRect =(50,50,200,200) //x and y postion , then width and height
+            ctx.strokeRect(50,50,200,200);
+
+
+        }
+    </script>
+</head>
+<body onload = "init()">
+
+<canvas id ="canvas" width="800" height="600">
+    <!--shown when canvas does is not supported -->
+    Canvas is not supported
+</canvas>
+
+</body>
+</html>
