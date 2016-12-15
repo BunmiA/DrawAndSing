@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="vendor/Skeleton-2.0.4/css/normalize.css" rel="stylesheet">
+    <link href="vendor/Skeleton-2.0.4/css/skeleton.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
 
     <script type ='text/javascript'>
         function init(){
@@ -12,19 +16,40 @@
             ctx.strokeStyle ="#0000000"
             ctx.fillStyle ="#FF00000"
             ctx.lineWidth ="20";
-            ctx.fillRect =(50,50,200,200) //x and y postion , then width and height
-            ctx.strokeRect(50,50,200,200);
-
-
+            ctx.fillRect =(100,50,200,200) //x and y postion , then width and height
+            ctx.strokeRect(100,50,200,200);
         }
     </script>
 </head>
 <body onload = "init()">
 
-<canvas id ="canvas" width="800" height="600">
-    <!--shown when canvas does is not supported -->
-    Canvas is not supported
-</canvas>
+
+    <!-- .container is main centered wrapper -->
+    <div class="section hero">
+        <div class="container">
+            <div class="row">
+                <div align="center" class="twelve column">
+                    <h1> Welcome to Draw and Sing</h1>            
+                </div>
+            </div>
+            <div class="row">
+                <div align="center" class="twelve column">
+                    <canvas id ="canvas" width="400" height="300">
+                        <!-- shown when canvas does is not supported  -->
+                        Canvas is not supported
+                    </canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div align="center" class="twelve column">
+                  <h5>To celebrate christmas meet my chritmas AI who tries to recognize numbers and sings to you based on a number not to give too much away</h5>
+                  <div>
+                      <button class="button-red ">Sing For Me</button> 
+                  </div>
+              </div> 
+          </div>
+      </div>
+  </div>
 
 </body>
 </html>

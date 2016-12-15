@@ -4,6 +4,22 @@
   border-radius: 100px;
 }
 
+.button-red {
+  color: #FFF;
+  background-color: #F01A23;
+  border-color: #F01A23;
+}
+
+
+.button-red:hover{
+     background-color: #CC1B23;
+}
+
+.button-red:focus{
+     background-color: #CC1B23;
+}
+
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -135,7 +151,7 @@
     padding: 20rem 0 19rem;
   }
   .hero {
-    padding: 22rem 0;
+    padding: 5rem 0;
   }
   .hero-heading {
     font-size: 3.0rem;
