@@ -165,3 +165,10 @@
     max-height: 570px;
   }
 }
+
+/* my custom classes
+-----------------------------------*/
+
+.cborder {
+  border:1px solid #000000
+  }

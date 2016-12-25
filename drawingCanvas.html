@@ -6,20 +6,6 @@
     <link href="vendor/Skeleton-2.0.4/css/normalize.css" rel="stylesheet">
     <link href="vendor/Skeleton-2.0.4/css/skeleton.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-
-
-    <script type ='text/javascript'>
-        function init(){
-            var can = document.getElementById("canvas");
-            var ctx = can.getContext("2d");
-            // you can use rgb and aplpha rgb(255,255,0,0.5)
-            ctx.strokeStyle ="#0000000"
-            ctx.fillStyle ="#FF00000"
-            ctx.lineWidth ="20";
-            ctx.fillRect =(100,50,200,200) //x and y postion , then width and height
-            ctx.strokeRect(100,50,200,200);
-        }
-    </script>
 </head>
 <body onload = "init()">
 
@@ -34,7 +20,10 @@
             </div>
             <div class="row">
                 <div align="center" class="twelve column">
-                    <canvas id ="canvas" width="400" height="300">
+                  <div id="clearCanvas">
+                      <button class="button-red " onclick="myFunction()">clear</button> 
+                  </div>
+                    <canvas id ="drawingCanvas" width="400" height="300" class="cborder">
                         <!-- shown when canvas does is not supported  -->
                         Canvas is not supported
                     </canvas>
@@ -50,6 +39,9 @@
           </div>
       </div>
   </div>
+
+    <script src="vendor/jQuery/jquery.js"> </script>
+    <script src="js/drawing.js"> </script>
 
 </body>
 </html>
